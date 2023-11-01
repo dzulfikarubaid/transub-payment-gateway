@@ -9,4 +9,5 @@ app.use(cors(
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/api/payment", PaymentRoutes);
+app.use(express.static('public'))
 export default app
