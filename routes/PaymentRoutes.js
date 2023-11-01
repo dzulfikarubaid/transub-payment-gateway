@@ -19,7 +19,7 @@ router.post('/process-transaction', (req, res) => {
             customer_details: {
                 email: req.body.email
             },
-            finish_redirect_url: redirectUrl,
+    
            
         }
         snap.createTransaction(parameter)
